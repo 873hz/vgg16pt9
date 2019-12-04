@@ -1,0 +1,1345 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="D:\DA\20_mc_stain\pt9 project\!!!dotWithMath.v4p" systemname="dotWithMath" filename="D:\DA\20_mc_stain\pt9 project\dotWithMath.v4p" scrollx="2232" scrolly="4188">
+   <BOUNDS type="Window" left="0" top="0" width="11700" height="11820">
+   </BOUNDS>
+   <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.94.50-gf563f1b382\vvvv\nodes\modules\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="5100" top="7449" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Initial Distance" slicecount="1" values="5.36">
+   </PIN>
+   <PIN pinname="Initial Latitude" slicecount="1" values="0.05">
+   </PIN>
+   </NODE>
+   <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="3156" top="7485" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3156" top="7485" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Layer In" visible="1">
+   </PIN>
+   <PIN pinname="Uniform Scale" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE systemname="IcoSphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="IcoSphere (DX11.Geometry)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2388" top="4692" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2388" top="4692" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="SubDivisions" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Radius" slicecount="1" values="0.001">
+   </PIN>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="3840" top="6909" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3840" top="6909" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Layer Out" dstnodeid="2" dstpinname="Layer In">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="5412" top="3261" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Phase" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Period" visible="1">
+   </PIN>
+   <PIN pinname="Reverse" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="6288" top="3261" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Phase" visible="1" slicecount="1" values="0.899356944815293">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Period" visible="1">
+   </PIN>
+   <PIN pinname="Reverse" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="7260" top="3261" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Phase" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Period" visible="1">
+   </PIN>
+   <PIN pinname="Reverse" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="6204" top="4185" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Line (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\Line (DX11).v4p" nodename="Line (DX11)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="5448" top="5901" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="VerticesXYZ" visible="1" slicecount="105" values="0.393785681022751,0.960031470730521,0.83420226475425,0.912098288728868,0.855356023857963,0.00586662957970963,0.26689118560673,0.0218197013024899,0.137571095248622,0.24931772908852,0.877982046306168,0.205013950386337,0.249317729088521,0.877982046306168,0.93282444249125,0.270355441177395,0.0206924827434543,0.199209164921241,0.909872685968338,0.858094258955262,0.480580215431506,0.929870331285755,0.831391865175629,0.0118591061156398,0.899006041479856,0.278782770768981,0.946424370235781,0.00663043588903139,0.487271337021149,0.995145216351798,0.0360285957888395,0.230000094225626,0.719590710021415,0.0360285957888393,0.230000094225626,0.480371746640967,0.904530317170294,0.287143945847166,0.00705704391521655,0.278572477871939,0.898864666455051,0.0472881679660883,0.312227329545423,0.92000879799163,0.966235776539638,0.853704201107186,0.913420343747803,0.0228912854981003,0.351259427012518,0.00322037552347498,0.0227572668742665,0.174791864109932,0.812123943738759,0.413476554565815,0.174791864109932,0.812123943738759,0.777907534954583,0.351259427012517,0.00322037552347498,0.0520623638265198,0.850178279262537,0.916191832060681,0.26299513428729,0.87553864295532,0.894628965197807,0.23826555721399,0.947639862624601,0.365072676008996,0.972290146820873,0.000121368340665506,0.395511148127545,0.794444460644826,0.756457395574076,0.969672424078993,0.862890439525209,0.595942336759762,0.999994740814745,1.30861550901029E-006,0.033390898121369,0.236093283197662,0.563158908499661,0.996625695212062,0.536094870947048,0.269121877769466,0.990998495104038,0.499228601079743,0.294798447201191,0.598313366481577,0.0368663631146647,0.370251876119118,0.180232226731246,0.817653817476814,0.674421327115211,0.995565465243575,0.658127279362208,0.0128711560378428,0.995565465243575,0.658127279362208,0.900206474659878,0.180232226731246,0.817653817476814,0.745774886336871,0.604289811747118,0.0392008497065301,0.95015882348177">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="BinSize" visible="1" slicecount="8" values="1,1,1,1,1,1,1,1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="0.15">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Single Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Antialias" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="4" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="Rasterizer (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="5436" top="5373" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5436" top="5373" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="NoCullSimple">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Render State" dstnodeid="13" dstpinname="Render State">
+   </LINK>
+   <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="5436" top="5037" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5436" top="5037" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="Blend">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Render State" dstnodeid="14" dstpinname="Render State">
+   </LINK>
+   <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="6372" top="4725" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="2892" top="5913" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Geometry" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Geometry Out" dstnodeid="17" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Render State" dstnodeid="17" dstpinname="Render State">
+   </LINK>
+   <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="3531" top="4935" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1" slicecount="24" values="0.550624342868315,0.32336440893947,0.214192688305523,0.901604976507795,0.409164373283159,0.96096369881588,0.52408218977625,0.470469535537522,0.495331526228118,0.911705692987657,0.944166821376025,0.748104700733725,0.420229444170796,0.606253261228821,0.728773215658341,0.661563950755495,0.590661654683198,0.812215061041362,0.591425619971064,0.972628980014791,0.520794251983315,0.591425619971064,0.972628980014791,0.520794251983315">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Transform Out" dstnodeid="17" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4992" top="2529" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4992" top="2529" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1000.03">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Period">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Period">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Period">
+   </LINK>
+   <NODE systemname="WaveShaper (Value)" nodename="WaveShaper (Value)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="5208" top="3681" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Shape" slicecount="1" values="Inverse">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="42" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Output" dstnodeid="12" dstpinname="X">
+   </LINK>
+   <NODE systemname="WaveShaper (Value)" nodename="WaveShaper (Value)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="6228" top="3717" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Shape" slicecount="1" values="Triangle">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="43" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="12" dstpinname="Y">
+   </LINK>
+   <NODE systemname="WaveShaper (Value)" nodename="WaveShaper (Value)" componentmode="Hidden" id="44">
+   <BOUNDS type="Node" left="7332" top="3741" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Shape" slicecount="1" values="Triangle">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="44" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Output" dstnodeid="12" dstpinname="Z">
+   </LINK>
+   <NODE systemname="CircularSpread (Spreads)" nodename="CircularSpread (Spreads)" componentmode="Hidden" id="59">
+   <BOUNDS type="Node" left="6132" top="2397" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Output X" visible="1">
+   </PIN>
+   <PIN pinname="Output Y" visible="1">
+   </PIN>
+   <PIN pinname="Input X" visible="1" slicecount="1" values="0.966357876921414">
+   </PIN>
+   <PIN pinname="Input Y" visible="1" slicecount="1" values="0.764001042225194">
+   </PIN>
+   <PIN pinname="Phase" visible="1" slicecount="3" values="0.917615079666668,0.91739202,0.251066450333331">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1.53">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="1.48">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7224" top="1593" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7224" top="1593" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="68">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Spread Count">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Output X" dstnodeid="5" dstpinname="Phase">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Output Y" dstnodeid="7" dstpinname="Phase">
+   </LINK>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="66">
+   <BOUNDS type="Node" left="1194" top="1386" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Spread Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="3837" top="4269" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1" slicecount="15" values="0.102956196017314,0.127082685959064,0.633157311890436,0.0882790649233827,0.701526397395744,0.108994438149104,0.64258627222579,0.997467477267662,0.140647864461257,0.999844097637151,0.605925411839949,0.99507019411566,0.66633436918654,0.067998027523598,0.675552505354751">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="105" values="0.393785681022751,0.960031470730521,0.137871528496967,0.912098288728869,0.855356023857963,0.998577742124266,0.26689118560673,0.02181970130249,0.888133501759707,0.249317729088521,0.877982046306168,0.76267645289971,0.249317729088521,0.877982046306168,0.0879672686085822,0.270355441177394,0.0206924827434544,0.830958805377797,0.909872685968338,0.858094258955262,0.558239404411831,0.929870331285755,0.831391865175629,0.586473953010382,0.899006041479855,0.27878277076898,0.12133377183769,0.0066304358890315,0.487271337021149,0.375044575177117,0.0360285957888393,0.230000094225626,0.831214009479627,0.0360285957888392,0.230000094225626,0.0457927258286588,0.904530317170294,0.287143945847166,0.765705100097779,0.278572477871939,0.898864666455051,0.476825346934337,0.312227329545423,0.92000879799163,0.466410232165059,0.853704201107186,0.913420343747803,0.215152500456801,0.351259427012517,0.00322037552347498,0.500247814904175,0.174791864109932,0.812123943738759,0.00411908253960397,0.174791864109933,0.812123943738759,0.979552633193419,0.351259427012517,0.00322037552347504,0.578685643493546,0.850178279262537,0.916191832060681,0.849710279405482,0.87553864295532,0.894628965197806,0.243305760911488,0.9476398626246,0.365072676008996,0.970322420411008,0.000121368340665451,0.395511148127545,0.789660326342296,0.756457395574077,0.969672424078993,0.866919913509397,0.595942336759762,0.999994740814745,4.95348950199648E-005,0.0333908981213688,0.236093283197662,0.557307655559732,0.996625695212062,0.536094870947048,0.263909832991363,0.990998495104038,0.499228601079743,0.8662382591469,0.598313366481578,0.0368663631146647,0.00100604755926426,0.180232226731245,0.817653817476814,0.111932606445586,0.995565465243575,0.658127279362209,0.237234335235533,0.995565465243575,0.658127279362208,0.91209212089138,0.180232226731246,0.817653817476814,0.16620014653378,0.604289811747118,0.0392008497065301,0.437985191077888">
+   </PIN>
+   <PIN pinname="Z" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Queue (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Queue (Spreads)" componentmode="Hidden" id="71">
+   <BOUNDS type="Node" left="3495" top="3051" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3495" top="3051" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="15" values="0.102956196017313,0.127082685959064,0.994061808842135,0.0882790649233828,0.701526397395744,0.145455447875737,0.642586272225791,0.997467477267662,0.29111062417173,0.999844097637151,0.60592541183995,0.401979263358888,0.666334369186541,0.0679980275235982,0.86749025932085">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Insert" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Frame Count" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="71" srcpinname="Output" dstnodeid="70" dstpinname="Z">
+   </LINK>
+   <NODE systemname="Queue (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Queue (Spreads)" componentmode="Hidden" id="72">
+   <BOUNDS type="Node" left="3003" top="3741" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3003" top="3741" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="15" values="0.102956196017313,0.127082685959064,0.630879542089136,0.0882790649233827,0.701526397395744,0.677761770377664,0.64258627222579,0.997467477267662,0.0814958715394485,0.999844097637151,0.605925411839949,0.233980129617438,0.666334369186541,0.0679980275235982,0.964059179183682">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Insert" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Frame Count" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="72" srcpinname="Output" dstnodeid="70" dstpinname="Y">
+   </LINK>
+   <NODE systemname="contingent_math" filename="contingent_math.v4p" componentmode="Hidden" id="121" nodename="contingent_math.v4p">
+   <BOUNDS type="Node" left="861" top="816" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="861" top="816" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5160" top="828" width="9000" height="10884">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Maximum Interval - Minimum Interval" visible="1" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="8" visible="1">
+   </PIN>
+   <PIN pinname="7" visible="1">
+   </PIN>
+   <PIN pinname="6" visible="1">
+   </PIN>
+   <PIN pinname="5" visible="1">
+   </PIN>
+   <PIN pinname="4" visible="1">
+   </PIN>
+   <PIN pinname="3" visible="1">
+   </PIN>
+   <PIN pinname="1" visible="1">
+   </PIN>
+   <PIN pinname="chan numb" visible="1">
+   </PIN>
+   <PIN pinname="trig time" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="2" visible="1">
+   </PIN>
+   <PIN pinname="15" visible="1">
+   </PIN>
+   <PIN pinname="16" visible="1">
+   </PIN>
+   <PIN pinname="17" visible="1">
+   </PIN>
+   <PIN pinname="18" visible="1">
+   </PIN>
+   <PIN pinname="19" visible="1">
+   </PIN>
+   <PIN pinname="20" visible="1">
+   </PIN>
+   <PIN pinname="21" visible="1">
+   </PIN>
+   <PIN pinname="22" visible="1">
+   </PIN>
+   <PIN pinname="23" visible="1">
+   </PIN>
+   <PIN pinname="24" visible="1">
+   </PIN>
+   <PIN pinname="25" visible="1">
+   </PIN>
+   <PIN pinname="26" visible="1">
+   </PIN>
+   <PIN pinname="27" visible="1">
+   </PIN>
+   <PIN pinname="28" visible="1">
+   </PIN>
+   <PIN pinname="29" visible="1">
+   </PIN>
+   <PIN pinname="30" visible="1">
+   </PIN>
+   <PIN pinname="9" visible="1">
+   </PIN>
+   <PIN pinname="10" visible="1">
+   </PIN>
+   <PIN pinname="11" visible="1">
+   </PIN>
+   <PIN pinname="12" visible="1">
+   </PIN>
+   <PIN pinname="13" visible="1">
+   </PIN>
+   <PIN pinname="14" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="XYZ" dstnodeid="71" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="XYZ" dstnodeid="72" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="XYZ" dstnodeid="70" dstpinname="X">
+   </LINK>
+   <NODE id="61" systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden">
+   <PIN pinname="Input 2" slicecount="1" values="0.1">
+   </PIN>
+   <BOUNDS type="Node" left="6828" top="2805" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Output X" dstnodeid="61" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="134" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7830" top="2745" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7830" top="2745" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Layer" dstnodeid="4" dstpinname="Layer 1">
+   </LINK>
+   <NODE systemname="rnd" filename="rnd.v4p" componentmode="Hidden" id="160" nodename="rnd.v4p">
+   <BOUNDS type="Node" left="18" top="1938" width="1248" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18" top="1938" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9900" top="4392" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="sync in" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="input float" visible="1" slicecount="1" values="0.0678177787922323">
+   </PIN>
+   <PIN pinname="sync out" visible="1">
+   </PIN>
+   <PIN pinname="output float" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="159">
+   <BOUNDS type="Node" left="18" top="1413" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="17" values="0.606908731395379,0.913946667918935,0.483284082496539,0.613060252275318,0.191608069464564,0.926562858279794,0.207415539305657,0.201435531955212,0.374908446799964,0.311503984034061,0.718032357981428,0.938753397902474,0.310160904889926,0.586351224919781,0.690610790159553,0.283847022801638,0.137951007112861">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="159" srcpinname="OnChange" dstnodeid="160" dstpinname="sync in">
+   </LINK>
+   <NODE systemname="rnd" filename="rnd.v4p" componentmode="Hidden" id="155" nodename="rnd.v4p">
+   <BOUNDS type="Node" left="30" top="3366" width="1248" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="30" top="3366" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9900" top="4392" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="sync in" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="input float" visible="1" slicecount="1" values="0.0678177787922323">
+   </PIN>
+   <PIN pinname="sync out" visible="1">
+   </PIN>
+   <PIN pinname="output float" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="154">
+   <BOUNDS type="Node" left="30" top="2841" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="154" srcpinname="OnChange" dstnodeid="155" dstpinname="sync in">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="153">
+   <BOUNDS type="Node" left="1026" top="2661" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1026" top="2661" width="792" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.18">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="155" dstpinname="input float">
+   </LINK>
+   <LINK srcnodeid="160" srcpinname="output float" dstnodeid="153" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="160" srcpinname="output float" dstnodeid="154" dstpinname="Input">
+   </LINK>
+   <NODE systemname="rnd" filename="rnd.v4p" componentmode="Hidden" id="152" nodename="rnd.v4p">
+   <BOUNDS type="Node" left="15" top="4671" width="1248" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15" top="4671" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9900" top="4392" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="sync in" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="input float" visible="1" slicecount="1" values="0.0678177787922323">
+   </PIN>
+   <PIN pinname="sync out" visible="1">
+   </PIN>
+   <PIN pinname="output float" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="151">
+   <BOUNDS type="Node" left="15" top="4146" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="151" srcpinname="OnChange" dstnodeid="152" dstpinname="sync in">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="150">
+   <BOUNDS type="Node" left="1011" top="3966" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1011" top="3966" width="792" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.18">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="150" srcpinname="Y Output Value" dstnodeid="152" dstpinname="input float">
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="output float" dstnodeid="151" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="output float" dstnodeid="150" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="148">
+   <BOUNDS type="Node" left="1830" top="2586" width="315" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1830" top="2586" width="315" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="y1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="147">
+   <BOUNDS type="Node" left="2175" top="2601" width="330" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2175" top="2601" width="330" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="x2">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="146">
+   <BOUNDS type="Node" left="2010" top="3951" width="315" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2010" top="3951" width="315" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="y2">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Output" dstnodeid="160" dstpinname="input float">
+   </LINK>
+   <NODE systemname="Trigger (Animation)" filename="%VVVV%\lib\nodes\modules\Animation\Trigger (Animation).v4p" nodename="Trigger (Animation)" componentmode="Hidden" id="162">
+   <BOUNDS type="Node" left="15" top="795" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="162" srcpinname="Bang" dstnodeid="159" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="6" dstpinname="Phase">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Input X">
+   </LINK>
+   <LINK srcnodeid="150" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Input Y">
+   </LINK>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="267">
+   <BOUNDS type="Node" left="6210" top="720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Spread Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="268">
+   <BOUNDS type="Node" left="5235" top="1230" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Phase" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="269">
+   <BOUNDS type="Node" left="6240" top="1245" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Phase" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="WaveShaper (Value)" nodename="WaveShaper (Value)" componentmode="Hidden" id="270">
+   <BOUNDS type="Node" left="4830" top="1665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="268" srcpinname="Output" dstnodeid="270" dstpinname="Input">
+   </LINK>
+   <NODE systemname="WaveShaper (Value)" nodename="WaveShaper (Value)" componentmode="Hidden" id="271">
+   <BOUNDS type="Node" left="6090" top="1665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="269" srcpinname="Output" dstnodeid="271" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="267" srcpinname="Output" dstnodeid="268" dstpinname="Phase">
+   </LINK>
+   <LINK srcnodeid="267" srcpinname="Output" dstnodeid="269" dstpinname="Phase">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="272">
+   <BOUNDS type="Box" left="4080" top="360" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4080" top="360" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|chan numb|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="272" srcpinname="Y Output Value" dstnodeid="121" dstpinname="chan numb">
+   </LINK>
+   <NODE systemname="Cons (3d)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (3d)" componentmode="Hidden" id="275">
+   <BOUNDS type="Node" left="945" top="2199" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="945" top="2199" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Input 1XYZ" visible="1" slicecount="3" values="0.518595318224867,0.68304140751502,0.914200087811924">
+   </PIN>
+   <PIN pinname="Input 2XYZ" visible="1" slicecount="3" values="0.644996990761929,0.830802582200504,0.583690501695429">
+   </PIN>
+   <PIN pinname="Input 3XYZ" visible="1" slicecount="3" values="0.24408701284836,0.756849027063352,0.783681001685073">
+   </PIN>
+   <PIN pinname="Input 4XYZ" visible="1" slicecount="3" values="0.71772827148283,0.692510362573798,0.721997867667716">
+   </PIN>
+   <PIN pinname="Input 5XYZ" visible="1" slicecount="3" values="0.489224721782988,0.309282694260348,0.558836681070716">
+   </PIN>
+   <PIN pinname="Input 6XYZ" visible="1" slicecount="3" values="0.130029305277722,0.823019119923122,0.680300885571864">
+   </PIN>
+   <PIN pinname="Input 7XYZ" visible="1" slicecount="3" values="0.780075043371352,0.756247106242533,0.699971503882549">
+   </PIN>
+   <PIN pinname="Input 8XYZ" visible="1" slicecount="3" values="0.690714943916422,0.669047000436539,0.730719176005185">
+   </PIN>
+   <PIN pinname="OutputXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Output Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Input 9XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 10XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 11XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 12XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 13XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 14XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 15XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 16XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 17XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 18XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 19XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 20XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 21XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 22XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 23XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 24XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 25XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 26XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 27XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 28XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 29XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Input 30XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="275" srcpinname="OutputXYZ" dstnodeid="16" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Count" dstnodeid="13" dstpinname="BinSize">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="15" dstnodeid="275" dstpinname="Input 1XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="16" dstnodeid="275" dstpinname="Input 2XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="17" dstnodeid="275" dstpinname="Input 3XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="18" dstnodeid="275" dstpinname="Input 4XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="19" dstnodeid="275" dstpinname="Input 5XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="20" dstnodeid="275" dstpinname="Input 6XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="21" dstnodeid="275" dstpinname="Input 7XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="22" dstnodeid="275" dstpinname="Input 8XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="23" dstnodeid="275" dstpinname="Input 9XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="24" dstnodeid="275" dstpinname="Input 10XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="25" dstnodeid="275" dstpinname="Input 11XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="26" dstnodeid="275" dstpinname="Input 12XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="27" dstnodeid="275" dstpinname="Input 13XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="28" dstnodeid="275" dstpinname="Input 14XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="29" dstnodeid="275" dstpinname="Input 15XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="30" dstnodeid="275" dstpinname="Input 16XYZ">
+   </LINK>
+   <NODE systemname="WaveShaper (Value)" nodename="WaveShaper (Value)" componentmode="Hidden" id="278">
+   <BOUNDS type="Node" left="7470" top="4710" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Shape" slicecount="1" values="Sine">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="275" srcpinname="OutputXYZ" dstnodeid="278" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="7" dstnodeid="275" dstpinname="Input 17XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="8" dstnodeid="275" dstpinname="Input 18XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="9" dstnodeid="275" dstpinname="Input 19XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="3" dstnodeid="275" dstpinname="Input 20XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="10" dstnodeid="275" dstpinname="Input 21XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="4" dstnodeid="275" dstpinname="Input 22XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="1" dstnodeid="275" dstpinname="Input 23XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="5" dstnodeid="275" dstpinname="Input 24XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="11" dstnodeid="275" dstpinname="Input 25XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="6" dstnodeid="275" dstpinname="Input 26XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="12" dstnodeid="275" dstpinname="Input 27XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="2" dstnodeid="275" dstpinname="Input 28XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="13" dstnodeid="275" dstpinname="Input 29XYZ">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="14" dstnodeid="275" dstpinname="Input 30XYZ">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="279">
+   <BOUNDS type="Node" left="6816" top="5244" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Destination Minimum" slicecount="1" values="-5">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="278" srcpinname="Output" dstnodeid="279" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Queue (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Queue (Spreads)" componentmode="Hidden" id="280">
+   <BOUNDS type="Node" left="4608" top="4560" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4608" top="4560" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="15" values="0.102956196017313,0.127082685959064,0.630879542089136,0.0882790649233827,0.701526397395744,0.677761770377664,0.64258627222579,0.997467477267662,0.0814958715394485,0.999844097637151,0.605925411839949,0.233980129617438,0.666334369186541,0.0679980275235982,0.964059179183682">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Insert" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Frame Count" slicecount="1" values="26">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="279" srcpinname="Output" dstnodeid="280" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="280" srcpinname="Output" dstnodeid="13" dstpinname="VerticesXYZ">
+   </LINK>
+   <LINK srcnodeid="280" srcpinname="Output" dstnodeid="19" dstpinname="XYZ">
+   </LINK>
+   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
+   <BOUNDS type="Node" left="8808" top="648" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Maximum Foreground FPS" visible="1">
+   </PIN>
+   <PIN pinname="Maximum Background FPS" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="281">
+   <BOUNDS type="Node" left="8784" top="120" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8784" top="120" width="792" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="25">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="281" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
+   </LINK>
+   <LINK srcnodeid="281" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
+   </LINK>
+   <NODE systemname="Timing (Debug)" nodename="Timing (Debug)" componentmode="Hidden" id="282">
+   <BOUNDS type="Node" left="9240" top="1272" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="frames per second" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="283">
+   <BOUNDS type="Node" left="9312" top="1812" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9312" top="1812" width="792" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="282" srcpinname="frames per second" dstnodeid="283" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Renderer (DX11 TempTarget)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11 TempTarget)" componentmode="Hidden" id="288">
+   <BOUNDS type="Node" left="3000" top="8340" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3000" top="8340" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Buffers" visible="1">
+   </PIN>
+   <PIN pinname="AA Samples per Pixel" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Texture SizeXY" slicecount="2" values="4000,4000">
+   </PIN>
+   <PIN pinname="Texture ScaleXY" slicecount="2" values="1,1">
+   </PIN>
+   <PIN pinname="Clear Depth Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="View" dstnodeid="288" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Projection" dstnodeid="288" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Layer Out" dstnodeid="288" dstpinname="Layer">
+   </LINK>
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="289">
+   <BOUNDS type="Node" left="4392" top="8844" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4392" top="8844" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11424" top="0" width="11712" height="6276">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="288" srcpinname="Buffers" dstnodeid="289" dstpinname="Texture In">
+   </LINK>
+   <NODE id="273" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" width="792" height="240" left="2760" top="300">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|trig time|">
+   </PIN>
+   <BOUNDS type="Node" left="2760" top="300" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="273" srcpinname="Y Output Value" dstnodeid="121" dstpinname="trig time">
+   </LINK>
+   <NODE systemname="Pipet (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\modules\Pipet\Pipet (DX11.Texture 2d).v4p" nodename="Pipet (DX11.Texture 2d)" componentmode="Hidden" id="290">
+   <BOUNDS type="Node" left="8676" top="7008" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   <PIN pinname="UV Space" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="291">
+   <BOUNDS type="Box" left="8868" top="6084" width="792" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8868" top="6084" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3999">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="291" srcpinname="Y Output Value" dstnodeid="290" dstpinname="XY">
+   </LINK>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="295">
+   <BOUNDS type="Node" left="8748" top="4620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="4000">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="296">
+   <BOUNDS type="Node" left="8856" top="5676" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1" slicecount="4000" values="-0.499875,-0.499625,-0.499375,-0.499125,-0.498875,-0.498625,-0.498375,-0.498125,-0.497875,-0.497625,-0.497375,-0.497125,-0.496875,-0.496625,-0.496375,-0.496125,-0.495875,-0.495625,-0.495375,-0.495125,-0.494875,-0.494625,-0.494375,-0.494125,-0.493875,-0.493625,-0.493375,-0.493125,-0.492875,-0.492625,-0.492375,-0.492125,-0.491875,-0.491625,-0.491375,-0.491125,-0.490875,-0.490625,-0.490375,-0.490125,-0.489875,-0.489625,-0.489375,-0.489125,-0.488875,-0.488625,-0.488375,-0.488125,-0.487875,-0.487625,-0.487375,-0.487125,-0.486875,-0.486625,-0.486375,-0.486125,-0.485875,-0.485625,-0.485375,-0.485125,-0.484875,-0.484625,-0.484375,-0.484125,-0.483875,-0.483625,-0.483375,-0.483125,-0.482875,-0.482625,-0.482375,-0.482125,-0.481875,-0.481625,-0.481375,-0.481125,-0.480875,-0.480625,-0.480375,-0.480125,-0.479875,-0.479625,-0.479375,-0.479125,-0.478875,-0.478625,-0.478375,-0.478125,-0.477875,-0.477625,-0.477375,-0.477125,-0.476875,-0.476625,-0.476375,-0.476125,-0.475875,-0.475625,-0.475375,-0.475125,-0.474875,-0.474625,-0.474375,-0.474125,-0.473875,-0.473625,-0.473375,-0.473125,-0.472875,-0.472625,-0.472375,-0.472125,-0.471875,-0.471625,-0.471375,-0.471125,-0.470875,-0.470625,-0.470375,-0.470125,-0.469875,-0.469625,-0.469375,-0.469125,-0.468875,-0.468625,-0.468375,-0.468125,-0.467875,-0.467625,-0.467375,-0.467125,-0.466875,-0.466625,-0.466375,-0.466125,-0.465875,-0.465625,-0.465375,-0.465125,-0.464875,-0.464625,-0.464375,-0.464125,-0.463875,-0.463625,-0.463375,-0.463125,-0.462875,-0.462625,-0.462375,-0.462125,-0.461875,-0.461625,-0.461375,-0.461125,-0.460875,-0.460625,-0.460375,-0.460125,-0.459875,-0.459625,-0.459375,-0.459125,-0.458875,-0.458625,-0.458375,-0.458125,-0.457875,-0.457625,-0.457375,-0.457125,-0.456875,-0.456625,-0.456375,-0.456125,-0.455875,-0.455625,-0.455375,-0.455125,-0.454875,-0.454625,-0.454375,-0.454125,-0.453875,-0.453625,-0.453375,-0.453125,-0.452875,-0.452625,-0.452375,-0.452125,-0.451875,-0.451625,-0.451375,-0.451125,-0.450875,-0.450625,-0.450375,-0.450125,-0.449875,-0.449625,-0.449375,-0.449125,-0.448875,-0.448625,-0.448375,-0.448125,-0.447875,-0.447625,-0.447375,-0.447125,-0.446875,-0.446625,-0.446375,-0.446125,-0.445875,-0.445625,-0.445375,-0.445125,-0.444875,-0.444625,-0.444375,-0.444125,-0.443875,-0.443625,-0.443375,-0.443125,-0.442875,-0.442625,-0.442375,-0.442125,-0.441875,-0.441625,-0.441375,-0.441125,-0.440875,-0.440625,-0.440375,-0.440125,-0.439875,-0.439625,-0.439375,-0.439125,-0.438875,-0.438625,-0.438375,-0.438125,-0.437875,-0.437625,-0.437375,-0.437125,-0.436875,-0.436625,-0.436375,-0.436125,-0.435875,-0.435625,-0.435375,-0.435125,-0.434875,-0.434625,-0.434375,-0.434125,-0.433875,-0.433625,-0.433375,-0.433125,-0.432875,-0.432625,-0.432375,-0.432125,-0.431875,-0.431625,-0.431375,-0.431125,-0.430875,-0.430625,-0.430375,-0.430125,-0.429875,-0.429625,-0.429375,-0.429125,-0.428875,-0.428625,-0.428375,-0.428125,-0.427875,-0.427625,-0.427375,-0.427125,-0.426875,-0.426625,-0.426375,-0.426125,-0.425875,-0.425625,-0.425375,-0.425125,-0.424875,-0.424625,-0.424375,-0.424125,-0.423875,-0.423625,-0.423375,-0.423125,-0.422875,-0.422625,-0.422375,-0.422125,-0.421875,-0.421625,-0.421375,-0.421125,-0.420875,-0.420625,-0.420375,-0.420125,-0.419875,-0.419625,-0.419375,-0.419125,-0.418875,-0.418625,-0.418375,-0.418125,-0.417875,-0.417625,-0.417375,-0.417125,-0.416875,-0.416625,-0.416375,-0.416125,-0.415875,-0.415625,-0.415375,-0.415125,-0.414875,-0.414625,-0.414375,-0.414125,-0.413875,-0.413625,-0.413375,-0.413125,-0.412875,-0.412625,-0.412375,-0.412125,-0.411875,-0.411625,-0.411375,-0.411125,-0.410875,-0.410625,-0.410375,-0.410125,-0.409875,-0.409625,-0.409375,-0.409125,-0.408875,-0.408625,-0.408375,-0.408125,-0.407875,-0.407625,-0.407375,-0.407125,-0.406875,-0.406625,-0.406375,-0.406125,-0.405875,-0.405625,-0.405375,-0.405125,-0.404875,-0.404625,-0.404375,-0.404125,-0.403875,-0.403625,-0.403375,-0.403125,-0.402875,-0.402625,-0.402375,-0.402125,-0.401875,-0.401625,-0.401375,-0.401125,-0.400875,-0.400625,-0.400375,-0.400125,-0.399875,-0.399625,-0.399375,-0.399125,-0.398875,-0.398625,-0.398375,-0.398125,-0.397875,-0.397625,-0.397375,-0.397125,-0.396875,-0.396625,-0.396375,-0.396125,-0.395875,-0.395625,-0.395375,-0.395125,-0.394875,-0.394625,-0.394375,-0.394125,-0.393875,-0.393625,-0.393375,-0.393125,-0.392875,-0.392625,-0.392375,-0.392125,-0.391875,-0.391625,-0.391375,-0.391125,-0.390875,-0.390625,-0.390375,-0.390125,-0.389875,-0.389625,-0.389375,-0.389125,-0.388875,-0.388625,-0.388375,-0.388125,-0.387875,-0.387625,-0.387375,-0.387125,-0.386875,-0.386625,-0.386375,-0.386125,-0.385875,-0.385625,-0.385375,-0.385125,-0.384875,-0.384625,-0.384375,-0.384125,-0.383875,-0.383625,-0.383375,-0.383125,-0.382875,-0.382625,-0.382375,-0.382125,-0.381875,-0.381625,-0.381375,-0.381125,-0.380875,-0.380625,-0.380375,-0.380125,-0.379875,-0.379625,-0.379375,-0.379125,-0.378875,-0.378625,-0.378375,-0.378125,-0.377875,-0.377625,-0.377375,-0.377125,-0.376875,-0.376625,-0.376375,-0.376125,-0.375875,-0.375625,-0.375375,-0.375125,-0.374875,-0.374625,-0.374375,-0.374125,-0.373875,-0.373625,-0.373375,-0.373125,-0.372875,-0.372625,-0.372375,-0.372125,-0.371875,-0.371625,-0.371375,-0.371125,-0.370875,-0.370625,-0.370375,-0.370125,-0.369875,-0.369625,-0.369375,-0.369125,-0.368875,-0.368625,-0.368375,-0.368125,-0.367875,-0.367625,-0.367375,-0.367125,-0.366875,-0.366625,-0.366375,-0.366125,-0.365875,-0.365625,-0.365375,-0.365125,-0.364875,-0.364625,-0.364375,-0.364125,-0.363875,-0.363625,-0.363375,-0.363125,-0.362875,-0.362625,-0.362375,-0.362125,-0.361875,-0.361625,-0.361375,-0.361125,-0.360875,-0.360625,-0.360375,-0.360125,-0.359875,-0.359625,-0.359375,-0.359125,-0.358875,-0.358625,-0.358375,-0.358125,-0.357875,-0.357625,-0.357375,-0.357125,-0.356875,-0.356625,-0.356375,-0.356125,-0.355875,-0.355625,-0.355375,-0.355125,-0.354875,-0.354625,-0.354375,-0.354125,-0.353875,-0.353625,-0.353375,-0.353125,-0.352875,-0.352625,-0.352375,-0.352125,-0.351875,-0.351625,-0.351375,-0.351125,-0.350875,-0.350625,-0.350375,-0.350125,-0.349875,-0.349625,-0.349375,-0.349125,-0.348875,-0.348625,-0.348375,-0.348125,-0.347875,-0.347625,-0.347375,-0.347125,-0.346875,-0.346625,-0.346375,-0.346125,-0.345875,-0.345625,-0.345375,-0.345125,-0.344875,-0.344625,-0.344375,-0.344125,-0.343875,-0.343625,-0.343375,-0.343125,-0.342875,-0.342625,-0.342375,-0.342125,-0.341875,-0.341625,-0.341375,-0.341125,-0.340875,-0.340625,-0.340375,-0.340125,-0.339875,-0.339625,-0.339375,-0.339125,-0.338875,-0.338625,-0.338375,-0.338125,-0.337875,-0.337625,-0.337375,-0.337125,-0.336875,-0.336625,-0.336375,-0.336125,-0.335875,-0.335625,-0.335375,-0.335125,-0.334875,-0.334625,-0.334375,-0.334125,-0.333875,-0.333625,-0.333375,-0.333125,-0.332875,-0.332625,-0.332375,-0.332125,-0.331875,-0.331625,-0.331375,-0.331125,-0.330875,-0.330625,-0.330375,-0.330125,-0.329875,-0.329625,-0.329375,-0.329125,-0.328875,-0.328625,-0.328375,-0.328125,-0.327875,-0.327625,-0.327375,-0.327125,-0.326875,-0.326625,-0.326375,-0.326125,-0.325875,-0.325625,-0.325375,-0.325125,-0.324875,-0.324625,-0.324375,-0.324125,-0.323875,-0.323625,-0.323375,-0.323125,-0.322875,-0.322625,-0.322375,-0.322125,-0.321875,-0.321625,-0.321375,-0.321125,-0.320875,-0.320625,-0.320375,-0.320125,-0.319875,-0.319625,-0.319375,-0.319125,-0.318875,-0.318625,-0.318375,-0.318125,-0.317875,-0.317625,-0.317375,-0.317125,-0.316875,-0.316625,-0.316375,-0.316125,-0.315875,-0.315625,-0.315375,-0.315125,-0.314875,-0.314625,-0.314375,-0.314125,-0.313875,-0.313625,-0.313375,-0.313125,-0.312875,-0.312625,-0.312375,-0.312125,-0.311875,-0.311625,-0.311375,-0.311125,-0.310875,-0.310625,-0.310375,-0.310125,-0.309875,-0.309625,-0.309375,-0.309125,-0.308875,-0.308625,-0.308375,-0.308125,-0.307875,-0.307625,-0.307375,-0.307125,-0.306875,-0.306625,-0.306375,-0.306125,-0.305875,-0.305625,-0.305375,-0.305125,-0.304875,-0.304625,-0.304375,-0.304125,-0.303875,-0.303625,-0.303375,-0.303125,-0.302875,-0.302625,-0.302375,-0.302125,-0.301875,-0.301625,-0.301375,-0.301125,-0.300875,-0.300625,-0.300375,-0.300125,-0.299875,-0.299625,-0.299375,-0.299125,-0.298875,-0.298625,-0.298375,-0.298125,-0.297875,-0.297625,-0.297375,-0.297125,-0.296875,-0.296625,-0.296375,-0.296125,-0.295875,-0.295625,-0.295375,-0.295125,-0.294875,-0.294625,-0.294375,-0.294125,-0.293875,-0.293625,-0.293375,-0.293125,-0.292875,-0.292625,-0.292375,-0.292125,-0.291875,-0.291625,-0.291375,-0.291125,-0.290875,-0.290625,-0.290375,-0.290125,-0.289875,-0.289625,-0.289375,-0.289125,-0.288875,-0.288625,-0.288375,-0.288125,-0.287875,-0.287625,-0.287375,-0.287125,-0.286875,-0.286625,-0.286375,-0.286125,-0.285875,-0.285625,-0.285375,-0.285125,-0.284875,-0.284625,-0.284375,-0.284125,-0.283875,-0.283625,-0.283375,-0.283125,-0.282875,-0.282625,-0.282375,-0.282125,-0.281875,-0.281625,-0.281375,-0.281125,-0.280875,-0.280625,-0.280375,-0.280125,-0.279875,-0.279625,-0.279375,-0.279125,-0.278875,-0.278625,-0.278375,-0.278125,-0.277875,-0.277625,-0.277375,-0.277125,-0.276875,-0.276625,-0.276375,-0.276125,-0.275875,-0.275625,-0.275375,-0.275125,-0.274875,-0.274625,-0.274375,-0.274125,-0.273875,-0.273625,-0.273375,-0.273125,-0.272875,-0.272625,-0.272375,-0.272125,-0.271875,-0.271625,-0.271375,-0.271125,-0.270875,-0.270625,-0.270375,-0.270125,-0.269875,-0.269625,-0.269375,-0.269125,-0.268875,-0.268625,-0.268375,-0.268125,-0.267875,-0.267625,-0.267375,-0.267125,-0.266875,-0.266625,-0.266375,-0.266125,-0.265875,-0.265625,-0.265375,-0.265125,-0.264875,-0.264625,-0.264375,-0.264125,-0.263875,-0.263625,-0.263375,-0.263125,-0.262875,-0.262625,-0.262375,-0.262125,-0.261875,-0.261625,-0.261375,-0.261125,-0.260875,-0.260625,-0.260375,-0.260125,-0.259875,-0.259625,-0.259375,-0.259125,-0.258875,-0.258625,-0.258375,-0.258125,-0.257875,-0.257625,-0.257375,-0.257125,-0.256875,-0.256625,-0.256375,-0.256125,-0.255875,-0.255625,-0.255375,-0.255125,-0.254875,-0.254625,-0.254375,-0.254125,-0.253875,-0.253625,-0.253375,-0.253125,-0.252875,-0.252625,-0.252375,-0.252125,-0.251875,-0.251625,-0.251375,-0.251125,-0.250875,-0.250625,-0.250375,-0.250125,-0.249875,-0.249625,-0.249375,-0.249125,-0.248875,-0.248625,-0.248375,-0.248125,-0.247875,-0.247625,-0.247375,-0.247125,-0.246875,-0.246625,-0.246375,-0.246125,-0.245875,-0.245625,-0.245375,-0.245125,-0.244875,-0.244625,-0.244375,-0.244125,-0.243875,-0.243625,-0.243375,-0.243125,-0.242875,-0.242625,-0.242375,-0.242125,-0.241875,-0.241625,-0.241375,-0.241125,-0.240875,-0.240625,-0.240375,-0.240125,-0.239875,-0.239625,-0.239375,-0.239125,-0.238875,-0.238625,-0.238375,-0.238125,-0.237875,-0.237625,-0.237375,-0.237125,-0.236875,-0.236625,-0.236375,-0.236125,-0.235875,-0.235625,-0.235375,-0.235125,-0.234875,-0.234625,-0.234375,-0.234125,-0.233875,-0.233625,-0.233375,-0.233125,-0.232875,-0.232625,-0.232375,-0.232125,-0.231875,-0.231625,-0.231375,-0.231125,-0.230875,-0.230625,-0.230375,-0.230125,-0.229875,-0.229625,-0.229375,-0.229125,-0.228875,-0.228625,-0.228375,-0.228125,-0.227875,-0.227625,-0.227375,-0.227125,-0.226875,-0.226625,-0.226375,-0.226125,-0.225875,-0.225625,-0.225375,-0.225125,-0.224875,-0.224625,-0.224375,-0.224125,-0.223875,-0.223625,-0.223375,-0.223125,-0.222875,-0.222625,-0.222375,-0.222125,-0.221875,-0.221625,-0.221375,-0.221125,-0.220875,-0.220625,-0.220375,-0.220125,-0.219875,-0.219625,-0.219375,-0.219125,-0.218875,-0.218625,-0.218375,-0.218125,-0.217875,-0.217625,-0.217375,-0.217125,-0.216875,-0.216625,-0.216375,-0.216125,-0.215875,-0.215625,-0.215375,-0.215125,-0.214875,-0.214625,-0.214375,-0.214125,-0.213875,-0.213625,-0.213375,-0.213125,-0.212875,-0.212625,-0.212375,-0.212125,-0.211875,-0.211625,-0.211375,-0.211125,-0.210875,-0.210625,-0.210375,-0.210125,-0.209875,-0.209625,-0.209375,-0.209125,-0.208875,-0.208625,-0.208375,-0.208125,-0.207875,-0.207625,-0.207375,-0.207125,-0.206875,-0.206625,-0.206375,-0.206125,-0.205875,-0.205625,-0.205375,-0.205125,-0.204875,-0.204625,-0.204375,-0.204125,-0.203875,-0.203625,-0.203375,-0.203125,-0.202875,-0.202625,-0.202375,-0.202125,-0.201875,-0.201625,-0.201375,-0.201125,-0.200875,-0.200625,-0.200375,-0.200125,-0.199875,-0.199625,-0.199375,-0.199125,-0.198875,-0.198625,-0.198375,-0.198125,-0.197875,-0.197625,-0.197375,-0.197125,-0.196875,-0.196625,-0.196375,-0.196125,-0.195875,-0.195625,-0.195375,-0.195125,-0.194875,-0.194625,-0.194375,-0.194125,-0.193875,-0.193625,-0.193375,-0.193125,-0.192875,-0.192625,-0.192375,-0.192125,-0.191875,-0.191625,-0.191375,-0.191125,-0.190875,-0.190625,-0.190375,-0.190125,-0.189875,-0.189625,-0.189375,-0.189125,-0.188875,-0.188625,-0.188375,-0.188125,-0.187875,-0.187625,-0.187375,-0.187125,-0.186875,-0.186625,-0.186375,-0.186125,-0.185875,-0.185625,-0.185375,-0.185125,-0.184875,-0.184625,-0.184375,-0.184125,-0.183875,-0.183625,-0.183375,-0.183125,-0.182875,-0.182625,-0.182375,-0.182125,-0.181875,-0.181625,-0.181375,-0.181125,-0.180875,-0.180625,-0.180375,-0.180125,-0.179875,-0.179625,-0.179375,-0.179125,-0.178875,-0.178625,-0.178375,-0.178125,-0.177875,-0.177625,-0.177375,-0.177125,-0.176875,-0.176625,-0.176375,-0.176125,-0.175875,-0.175625,-0.175375,-0.175125,-0.174875,-0.174625,-0.174375,-0.174125,-0.173875,-0.173625,-0.173375,-0.173125,-0.172875,-0.172625,-0.172375,-0.172125,-0.171875,-0.171625,-0.171375,-0.171125,-0.170875,-0.170625,-0.170375,-0.170125,-0.169875,-0.169625,-0.169375,-0.169125,-0.168875,-0.168625,-0.168375,-0.168125,-0.167875,-0.167625,-0.167375,-0.167125,-0.166875,-0.166625,-0.166375,-0.166125,-0.165875,-0.165625,-0.165375,-0.165125,-0.164875,-0.164625,-0.164375,-0.164125,-0.163875,-0.163625,-0.163375,-0.163125,-0.162875,-0.162625,-0.162375,-0.162125,-0.161875,-0.161625,-0.161375,-0.161125,-0.160875,-0.160625,-0.160375,-0.160125,-0.159875,-0.159625,-0.159375,-0.159125,-0.158875,-0.158625,-0.158375,-0.158125,-0.157875,-0.157625,-0.157375,-0.157125,-0.156875,-0.156625,-0.156375,-0.156125,-0.155875,-0.155625,-0.155375,-0.155125,-0.154875,-0.154625,-0.154375,-0.154125,-0.153875,-0.153625,-0.153375,-0.153125,-0.152875,-0.152625,-0.152375,-0.152125,-0.151875,-0.151625,-0.151375,-0.151125,-0.150875,-0.150625,-0.150375,-0.150125,-0.149875,-0.149625,-0.149375,-0.149125,-0.148875,-0.148625,-0.148375,-0.148125,-0.147875,-0.147625,-0.147375,-0.147125,-0.146875,-0.146625,-0.146375,-0.146125,-0.145875,-0.145625,-0.145375,-0.145125,-0.144875,-0.144625,-0.144375,-0.144125,-0.143875,-0.143625,-0.143375,-0.143125,-0.142875,-0.142625,-0.142375,-0.142125,-0.141875,-0.141625,-0.141375,-0.141125,-0.140875,-0.140625,-0.140375,-0.140125,-0.139875,-0.139625,-0.139375,-0.139125,-0.138875,-0.138625,-0.138375,-0.138125,-0.137875,-0.137625,-0.137375,-0.137125,-0.136875,-0.136625,-0.136375,-0.136125,-0.135875,-0.135625,-0.135375,-0.135125,-0.134875,-0.134625,-0.134375,-0.134125,-0.133875,-0.133625,-0.133375,-0.133125,-0.132875,-0.132625,-0.132375,-0.132125,-0.131875,-0.131625,-0.131375,-0.131125,-0.130875,-0.130625,-0.130375,-0.130125,-0.129875,-0.129625,-0.129375,-0.129125,-0.128875,-0.128625,-0.128375,-0.128125,-0.127875,-0.127625,-0.127375,-0.127125,-0.126875,-0.126625,-0.126375,-0.126125,-0.125875,-0.125625,-0.125375,-0.125125,-0.124875,-0.124625,-0.124375,-0.124125,-0.123875,-0.123625,-0.123375,-0.123125,-0.122875,-0.122625,-0.122375,-0.122125,-0.121875,-0.121625,-0.121375,-0.121125,-0.120875,-0.120625,-0.120375,-0.120125,-0.119875,-0.119625,-0.119375,-0.119125,-0.118875,-0.118625,-0.118375,-0.118125,-0.117875,-0.117625,-0.117375,-0.117125,-0.116875,-0.116625,-0.116375,-0.116125,-0.115875,-0.115625,-0.115375,-0.115125,-0.114875,-0.114625,-0.114375,-0.114125,-0.113875,-0.113625,-0.113375,-0.113125,-0.112875,-0.112625,-0.112375,-0.112125,-0.111875,-0.111625,-0.111375,-0.111125,-0.110875,-0.110625,-0.110375,-0.110125,-0.109875,-0.109625,-0.109375,-0.109125,-0.108875,-0.108625,-0.108375,-0.108125,-0.107875,-0.107625,-0.107375,-0.107125,-0.106875,-0.106625,-0.106375,-0.106125,-0.105875,-0.105625,-0.105375,-0.105125,-0.104875,-0.104625,-0.104375,-0.104125,-0.103875,-0.103625,-0.103375,-0.103125,-0.102875,-0.102625,-0.102375,-0.102125,-0.101875,-0.101625,-0.101375,-0.101125,-0.100875,-0.100625,-0.100375,-0.100125,-0.099875,-0.099625,-0.099375,-0.099125,-0.098875,-0.098625,-0.098375,-0.098125,-0.097875,-0.097625,-0.097375,-0.097125,-0.096875,-0.096625,-0.096375,-0.096125,-0.095875,-0.095625,-0.095375,-0.095125,-0.094875,-0.094625,-0.094375,-0.094125,-0.093875,-0.093625,-0.093375,-0.093125,-0.092875,-0.092625,-0.092375,-0.092125,-0.091875,-0.091625,-0.091375,-0.091125,-0.090875,-0.090625,-0.090375,-0.090125,-0.089875,-0.089625,-0.089375,-0.089125,-0.088875,-0.088625,-0.088375,-0.088125,-0.087875,-0.087625,-0.087375,-0.087125,-0.086875,-0.086625,-0.086375,-0.086125,-0.085875,-0.085625,-0.085375,-0.085125,-0.084875,-0.084625,-0.084375,-0.084125,-0.083875,-0.083625,-0.083375,-0.083125,-0.082875,-0.082625,-0.082375,-0.082125,-0.081875,-0.081625,-0.081375,-0.081125,-0.080875,-0.080625,-0.080375,-0.080125,-0.079875,-0.079625,-0.079375,-0.079125,-0.078875,-0.078625,-0.078375,-0.078125,-0.077875,-0.077625,-0.077375,-0.077125,-0.076875,-0.076625,-0.076375,-0.076125,-0.075875,-0.075625,-0.075375,-0.075125,-0.074875,-0.074625,-0.074375,-0.074125,-0.073875,-0.073625,-0.073375,-0.073125,-0.072875,-0.072625,-0.072375,-0.072125,-0.071875,-0.071625,-0.071375,-0.071125,-0.070875,-0.070625,-0.070375,-0.070125,-0.069875,-0.069625,-0.069375,-0.069125,-0.068875,-0.068625,-0.068375,-0.068125,-0.067875,-0.067625,-0.067375,-0.067125,-0.066875,-0.066625,-0.066375,-0.066125,-0.065875,-0.065625,-0.065375,-0.065125,-0.064875,-0.064625,-0.064375,-0.064125,-0.063875,-0.063625,-0.063375,-0.063125,-0.062875,-0.062625,-0.062375,-0.062125,-0.061875,-0.061625,-0.061375,-0.061125,-0.060875,-0.060625,-0.060375,-0.060125,-0.059875,-0.059625,-0.059375,-0.059125,-0.058875,-0.058625,-0.058375,-0.058125,-0.057875,-0.057625,-0.057375,-0.057125,-0.056875,-0.056625,-0.056375,-0.056125,-0.055875,-0.055625,-0.055375,-0.055125,-0.054875,-0.054625,-0.054375,-0.054125,-0.053875,-0.053625,-0.053375,-0.053125,-0.052875,-0.052625,-0.052375,-0.052125,-0.051875,-0.051625,-0.051375,-0.051125,-0.050875,-0.050625,-0.050375,-0.050125,-0.049875,-0.049625,-0.049375,-0.049125,-0.048875,-0.048625,-0.048375,-0.048125,-0.047875,-0.047625,-0.047375,-0.047125,-0.046875,-0.046625,-0.046375,-0.046125,-0.045875,-0.045625,-0.045375,-0.045125,-0.044875,-0.044625,-0.044375,-0.044125,-0.043875,-0.043625,-0.043375,-0.043125,-0.042875,-0.042625,-0.042375,-0.042125,-0.041875,-0.041625,-0.041375,-0.041125,-0.040875,-0.040625,-0.040375,-0.040125,-0.039875,-0.039625,-0.039375,-0.039125,-0.038875,-0.038625,-0.038375,-0.038125,-0.037875,-0.037625,-0.037375,-0.037125,-0.036875,-0.036625,-0.036375,-0.036125,-0.035875,-0.035625,-0.035375,-0.035125,-0.034875,-0.034625,-0.034375,-0.034125,-0.033875,-0.033625,-0.033375,-0.033125,-0.032875,-0.032625,-0.032375,-0.032125,-0.031875,-0.031625,-0.031375,-0.031125,-0.030875,-0.030625,-0.030375,-0.030125,-0.029875,-0.029625,-0.029375,-0.029125,-0.028875,-0.028625,-0.028375,-0.028125,-0.027875,-0.027625,-0.027375,-0.027125,-0.026875,-0.026625,-0.026375,-0.026125,-0.025875,-0.025625,-0.025375,-0.025125,-0.024875,-0.024625,-0.024375,-0.024125,-0.023875,-0.023625,-0.023375,-0.023125,-0.022875,-0.022625,-0.022375,-0.022125,-0.021875,-0.021625,-0.021375,-0.021125,-0.020875,-0.020625,-0.020375,-0.020125,-0.019875,-0.019625,-0.019375,-0.019125,-0.018875,-0.018625,-0.018375,-0.018125,-0.017875,-0.017625,-0.017375,-0.017125,-0.016875,-0.016625,-0.016375,-0.016125,-0.015875,-0.015625,-0.015375,-0.015125,-0.014875,-0.014625,-0.014375,-0.014125,-0.013875,-0.013625,-0.013375,-0.013125,-0.012875,-0.012625,-0.012375,-0.012125,-0.011875,-0.011625,-0.011375,-0.011125,-0.010875,-0.010625,-0.010375,-0.010125,-0.00987500000000002,-0.00962499999999999,-0.00937500000000002,-0.00912499999999999,-0.00887500000000002,-0.00862499999999999,-0.00837500000000002,-0.00812499999999999,-0.00787500000000002,-0.00762499999999999,-0.00737500000000002,-0.00712499999999999,-0.00687500000000002,-0.00662499999999999,-0.00637500000000002,-0.00612499999999999,-0.00587500000000002,-0.00562499999999999,-0.00537500000000002,-0.00512499999999999,-0.00487500000000002,-0.00462499999999999,-0.00437500000000002,-0.00412499999999999,-0.00387500000000002,-0.00362499999999999,-0.00337500000000002,-0.00312499999999999,-0.00287500000000002,-0.00262499999999999,-0.00237500000000002,-0.00212499999999999,-0.00187500000000002,-0.00162499999999999,-0.00137500000000002,-0.00112499999999999,-0.000875000000000015,-0.000624999999999987,-0.000375000000000014,-0.000124999999999986,0.000125000000000042,0.000375000000000014,0.000624999999999987,0.00087500000000007,0.00112500000000004,0.00137500000000002,0.00162499999999999,0.00187500000000007,0.00212500000000004,0.00237500000000002,0.00262499999999999,0.00287500000000007,0.00312500000000004,0.00337500000000002,0.00362499999999999,0.00387500000000007,0.00412500000000005,0.00437500000000002,0.00462499999999999,0.00487500000000007,0.00512500000000005,0.00537500000000002,0.00562499999999999,0.00587500000000007,0.00612500000000005,0.00637500000000002,0.00662499999999999,0.00687500000000008,0.00712500000000005,0.00737500000000002,0.00762499999999999,0.00787500000000008,0.00812500000000005,0.00837500000000002,0.00862499999999999,0.00887500000000008,0.00912500000000005,0.00937500000000002,0.00962499999999999,0.00987500000000008,0.0101250000000001,0.010375,0.010625,0.0108750000000001,0.0111250000000001,0.011375,0.011625,0.0118750000000001,0.0121250000000001,0.012375,0.012625,0.0128750000000001,0.0131250000000001,0.013375,0.013625,0.0138750000000001,0.0141250000000001,0.014375,0.014625,0.0148750000000001,0.0151250000000001,0.015375,0.015625,0.0158750000000001,0.0161250000000001,0.016375,0.016625,0.0168750000000001,0.0171250000000001,0.017375,0.017625,0.0178750000000001,0.0181250000000001,0.018375,0.018625,0.0188750000000001,0.0191250000000001,0.019375,0.019625,0.0198750000000001,0.0201250000000001,0.020375,0.020625,0.0208750000000001,0.0211250000000001,0.021375,0.021625,0.0218750000000001,0.0221250000000001,0.022375,0.022625,0.0228750000000001,0.0231250000000001,0.023375,0.023625,0.0238750000000001,0.0241250000000001,0.024375,0.024625,0.0248750000000001,0.0251250000000001,0.025375,0.025625,0.0258750000000001,0.0261250000000001,0.026375,0.026625,0.0268750000000001,0.0271250000000001,0.027375,0.027625,0.0278750000000001,0.0281250000000001,0.028375,0.028625,0.0288750000000001,0.0291250000000001,0.029375,0.029625,0.0298750000000001,0.0301250000000001,0.030375,0.030625,0.0308750000000001,0.0311250000000001,0.031375,0.031625,0.031875,0.0321250000000001,0.032375,0.032625,0.032875,0.0331250000000001,0.033375,0.033625,0.033875,0.0341250000000001,0.034375,0.034625,0.034875,0.0351250000000001,0.035375,0.035625,0.035875,0.0361250000000001,0.036375,0.036625,0.036875,0.0371250000000001,0.037375,0.037625,0.037875,0.0381250000000001,0.038375,0.038625,0.038875,0.0391250000000001,0.0393750000000001,0.039625,0.039875,0.0401250000000001,0.0403750000000001,0.040625,0.040875,0.0411250000000001,0.0413750000000001,0.041625,0.041875,0.0421250000000001,0.0423750000000001,0.042625,0.042875,0.0431250000000001,0.0433750000000001,0.043625,0.043875,0.0441250000000001,0.0443750000000001,0.044625,0.044875,0.0451250000000001,0.0453750000000001,0.045625,0.045875,0.0461250000000001,0.0463750000000001,0.046625,0.046875,0.0471250000000001,0.0473750000000001,0.047625,0.047875,0.0481250000000001,0.0483750000000001,0.048625,0.048875,0.0491250000000001,0.0493750000000001,0.049625,0.049875,0.0501250000000001,0.0503750000000001,0.050625,0.050875,0.0511250000000001,0.0513750000000001,0.051625,0.051875,0.0521250000000001,0.0523750000000001,0.052625,0.052875,0.0531250000000001,0.0533750000000001,0.053625,0.053875,0.0541250000000001,0.0543750000000001,0.054625,0.054875,0.0551250000000001,0.0553750000000001,0.055625,0.055875,0.0561250000000001,0.0563750000000001,0.056625,0.056875,0.0571250000000001,0.0573750000000001,0.057625,0.057875,0.0581250000000001,0.0583750000000001,0.058625,0.058875,0.0591250000000001,0.0593750000000001,0.059625,0.059875,0.0601250000000001,0.0603750000000001,0.060625,0.060875,0.0611250000000001,0.0613750000000001,0.061625,0.061875,0.0621250000000001,0.0623750000000001,0.062625,0.062875,0.063125,0.0633750000000001,0.063625,0.063875,0.064125,0.0643750000000001,0.064625,0.064875,0.065125,0.0653750000000001,0.065625,0.065875,0.066125,0.0663750000000001,0.0666250000000001,0.066875,0.067125,0.0673750000000001,0.0676250000000001,0.067875,0.068125,0.0683750000000001,0.0686250000000001,0.068875,0.069125,0.0693750000000001,0.0696250000000001,0.069875,0.070125,0.0703750000000001,0.0706250000000001,0.070875,0.071125,0.0713750000000001,0.0716250000000001,0.071875,0.072125,0.0723750000000001,0.0726250000000001,0.072875,0.073125,0.0733750000000001,0.0736250000000001,0.073875,0.074125,0.0743750000000001,0.0746250000000001,0.074875,0.075125,0.0753750000000001,0.0756250000000001,0.075875,0.076125,0.0763750000000001,0.0766250000000001,0.076875,0.077125,0.0773750000000001,0.0776250000000001,0.077875,0.078125,0.0783750000000001,0.0786250000000001,0.078875,0.079125,0.0793750000000001,0.0796250000000001,0.079875,0.080125,0.0803750000000001,0.0806250000000001,0.080875,0.081125,0.0813750000000001,0.0816250000000001,0.081875,0.082125,0.0823750000000001,0.0826250000000001,0.082875,0.083125,0.0833750000000001,0.0836250000000001,0.083875,0.084125,0.0843750000000001,0.0846250000000001,0.084875,0.085125,0.0853750000000001,0.0856250000000001,0.085875,0.086125,0.0863750000000001,0.0866250000000001,0.086875,0.087125,0.0873750000000001,0.0876250000000001,0.087875,0.088125,0.0883750000000001,0.0886250000000001,0.088875,0.089125,0.0893750000000001,0.0896250000000001,0.089875,0.090125,0.0903750000000001,0.0906250000000001,0.090875,0.091125,0.0913750000000001,0.0916250000000001,0.091875,0.092125,0.0923750000000001,0.0926250000000001,0.092875,0.093125,0.0933750000000001,0.0936250000000001,0.093875,0.094125,0.094375,0.0946250000000001,0.094875,0.095125,0.095375,0.0956250000000001,0.095875,0.096125,0.096375,0.0966250000000001,0.096875,0.097125,0.097375,0.0976250000000001,0.0978750000000001,0.098125,0.098375,0.0986250000000001,0.0988750000000001,0.099125,0.099375,0.0996250000000001,0.0998750000000001,0.100125,0.100375,0.100625,0.100875,0.101125,0.101375,0.101625,0.101875,0.102125,0.102375,0.102625,0.102875,0.103125,0.103375,0.103625,0.103875,0.104125,0.104375,0.104625,0.104875,0.105125,0.105375,0.105625,0.105875,0.106125,0.106375,0.106625,0.106875,0.107125,0.107375,0.107625,0.107875,0.108125,0.108375,0.108625,0.108875,0.109125,0.109375,0.109625,0.109875,0.110125,0.110375,0.110625,0.110875,0.111125,0.111375,0.111625,0.111875,0.112125,0.112375,0.112625,0.112875,0.113125,0.113375,0.113625,0.113875,0.114125,0.114375,0.114625,0.114875,0.115125,0.115375,0.115625,0.115875,0.116125,0.116375,0.116625,0.116875,0.117125,0.117375,0.117625,0.117875,0.118125,0.118375,0.118625,0.118875,0.119125,0.119375,0.119625,0.119875,0.120125,0.120375,0.120625,0.120875,0.121125,0.121375,0.121625,0.121875,0.122125,0.122375,0.122625,0.122875,0.123125,0.123375,0.123625,0.123875,0.124125,0.124375,0.124625,0.124875,0.125125,0.125375,0.125625,0.125875,0.126125,0.126375,0.126625,0.126875,0.127125,0.127375,0.127625,0.127875,0.128125,0.128375,0.128625,0.128875,0.129125,0.129375,0.129625,0.129875,0.130125,0.130375,0.130625,0.130875,0.131125,0.131375,0.131625,0.131875,0.132125,0.132375,0.132625,0.132875,0.133125,0.133375,0.133625,0.133875,0.134125,0.134375,0.134625,0.134875,0.135125,0.135375,0.135625,0.135875,0.136125,0.136375,0.136625,0.136875,0.137125,0.137375,0.137625,0.137875,0.138125,0.138375,0.138625,0.138875,0.139125,0.139375,0.139625,0.139875,0.140125,0.140375,0.140625,0.140875,0.141125,0.141375,0.141625,0.141875,0.142125,0.142375,0.142625,0.142875,0.143125,0.143375,0.143625,0.143875,0.144125,0.144375,0.144625,0.144875,0.145125,0.145375,0.145625,0.145875,0.146125,0.146375,0.146625,0.146875,0.147125,0.147375,0.147625,0.147875,0.148125,0.148375,0.148625,0.148875,0.149125,0.149375,0.149625,0.149875,0.150125,0.150375,0.150625,0.150875,0.151125,0.151375,0.151625,0.151875,0.152125,0.152375,0.152625,0.152875,0.153125,0.153375,0.153625,0.153875,0.154125,0.154375,0.154625,0.154875,0.155125,0.155375,0.155625,0.155875,0.156125,0.156375,0.156625,0.156875,0.157125,0.157375,0.157625,0.157875,0.158125,0.158375,0.158625,0.158875,0.159125,0.159375,0.159625,0.159875,0.160125,0.160375,0.160625,0.160875,0.161125,0.161375,0.161625,0.161875,0.162125,0.162375,0.162625,0.162875,0.163125,0.163375,0.163625,0.163875,0.164125,0.164375,0.164625,0.164875,0.165125,0.165375,0.165625,0.165875,0.166125,0.166375,0.166625,0.166875,0.167125,0.167375,0.167625,0.167875,0.168125,0.168375,0.168625,0.168875,0.169125,0.169375,0.169625,0.169875,0.170125,0.170375,0.170625,0.170875,0.171125,0.171375,0.171625,0.171875,0.172125,0.172375,0.172625,0.172875,0.173125,0.173375,0.173625,0.173875,0.174125,0.174375,0.174625,0.174875,0.175125,0.175375,0.175625,0.175875,0.176125,0.176375,0.176625,0.176875,0.177125,0.177375,0.177625,0.177875,0.178125,0.178375,0.178625,0.178875,0.179125,0.179375,0.179625,0.179875,0.180125,0.180375,0.180625,0.180875,0.181125,0.181375,0.181625,0.181875,0.182125,0.182375,0.182625,0.182875,0.183125,0.183375,0.183625,0.183875,0.184125,0.184375,0.184625,0.184875,0.185125,0.185375,0.185625,0.185875,0.186125,0.186375,0.186625,0.186875,0.187125,0.187375,0.187625,0.187875,0.188125,0.188375,0.188625,0.188875,0.189125,0.189375,0.189625,0.189875,0.190125,0.190375,0.190625,0.190875,0.191125,0.191375,0.191625,0.191875,0.192125,0.192375,0.192625,0.192875,0.193125,0.193375,0.193625,0.193875,0.194125,0.194375,0.194625,0.194875,0.195125,0.195375,0.195625,0.195875,0.196125,0.196375,0.196625,0.196875,0.197125,0.197375,0.197625,0.197875,0.198125,0.198375,0.198625,0.198875,0.199125,0.199375,0.199625,0.199875,0.200125,0.200375,0.200625,0.200875,0.201125,0.201375,0.201625,0.201875,0.202125,0.202375,0.202625,0.202875,0.203125,0.203375,0.203625,0.203875,0.204125,0.204375,0.204625,0.204875,0.205125,0.205375,0.205625,0.205875,0.206125,0.206375,0.206625,0.206875,0.207125,0.207375,0.207625,0.207875,0.208125,0.208375,0.208625,0.208875,0.209125,0.209375,0.209625,0.209875,0.210125,0.210375,0.210625,0.210875,0.211125,0.211375,0.211625,0.211875,0.212125,0.212375,0.212625,0.212875,0.213125,0.213375,0.213625,0.213875,0.214125,0.214375,0.214625,0.214875,0.215125,0.215375,0.215625,0.215875,0.216125,0.216375,0.216625,0.216875,0.217125,0.217375,0.217625,0.217875,0.218125,0.218375,0.218625,0.218875,0.219125,0.219375,0.219625,0.219875,0.220125,0.220375,0.220625,0.220875,0.221125,0.221375,0.221625,0.221875,0.222125,0.222375,0.222625,0.222875,0.223125,0.223375,0.223625,0.223875,0.224125,0.224375,0.224625,0.224875,0.225125,0.225375,0.225625,0.225875,0.226125,0.226375,0.226625,0.226875,0.227125,0.227375,0.227625,0.227875,0.228125,0.228375,0.228625,0.228875,0.229125,0.229375,0.229625,0.229875,0.230125,0.230375,0.230625,0.230875,0.231125,0.231375,0.231625,0.231875,0.232125,0.232375,0.232625,0.232875,0.233125,0.233375,0.233625,0.233875,0.234125,0.234375,0.234625,0.234875,0.235125,0.235375,0.235625,0.235875,0.236125,0.236375,0.236625,0.236875,0.237125,0.237375,0.237625,0.237875,0.238125,0.238375,0.238625,0.238875,0.239125,0.239375,0.239625,0.239875,0.240125,0.240375,0.240625,0.240875,0.241125,0.241375,0.241625,0.241875,0.242125,0.242375,0.242625,0.242875,0.243125,0.243375,0.243625,0.243875,0.244125,0.244375,0.244625,0.244875,0.245125,0.245375,0.245625,0.245875,0.246125,0.246375,0.246625,0.246875,0.247125,0.247375,0.247625,0.247875,0.248125,0.248375,0.248625,0.248875,0.249125,0.249375,0.249625,0.249875,0.250125,0.250375,0.250625,0.250875,0.251125,0.251375,0.251625,0.251875,0.252125,0.252375,0.252625,0.252875,0.253125,0.253375,0.253625,0.253875,0.254125,0.254375,0.254625,0.254875,0.255125,0.255375,0.255625,0.255875,0.256125,0.256375,0.256625,0.256875,0.257125,0.257375,0.257625,0.257875,0.258125,0.258375,0.258625,0.258875,0.259125,0.259375,0.259625,0.259875,0.260125,0.260375,0.260625,0.260875,0.261125,0.261375,0.261625,0.261875,0.262125,0.262375,0.262625,0.262875,0.263125,0.263375,0.263625,0.263875,0.264125,0.264375,0.264625,0.264875,0.265125,0.265375,0.265625,0.265875,0.266125,0.266375,0.266625,0.266875,0.267125,0.267375,0.267625,0.267875,0.268125,0.268375,0.268625,0.268875,0.269125,0.269375,0.269625,0.269875,0.270125,0.270375,0.270625,0.270875,0.271125,0.271375,0.271625,0.271875,0.272125,0.272375,0.272625,0.272875,0.273125,0.273375,0.273625,0.273875,0.274125,0.274375,0.274625,0.274875,0.275125,0.275375,0.275625,0.275875,0.276125,0.276375,0.276625,0.276875,0.277125,0.277375,0.277625,0.277875,0.278125,0.278375,0.278625,0.278875,0.279125,0.279375,0.279625,0.279875,0.280125,0.280375,0.280625,0.280875,0.281125,0.281375,0.281625,0.281875,0.282125,0.282375,0.282625,0.282875,0.283125,0.283375,0.283625,0.283875,0.284125,0.284375,0.284625,0.284875,0.285125,0.285375,0.285625,0.285875,0.286125,0.286375,0.286625,0.286875,0.287125,0.287375,0.287625,0.287875,0.288125,0.288375,0.288625,0.288875,0.289125,0.289375,0.289625,0.289875,0.290125,0.290375,0.290625,0.290875,0.291125,0.291375,0.291625,0.291875,0.292125,0.292375,0.292625,0.292875,0.293125,0.293375,0.293625,0.293875,0.294125,0.294375,0.294625,0.294875,0.295125,0.295375,0.295625,0.295875,0.296125,0.296375,0.296625,0.296875,0.297125,0.297375,0.297625,0.297875,0.298125,0.298375,0.298625,0.298875,0.299125,0.299375,0.299625,0.299875,0.300125,0.300375,0.300625,0.300875,0.301125,0.301375,0.301625,0.301875,0.302125,0.302375,0.302625,0.302875,0.303125,0.303375,0.303625,0.303875,0.304125,0.304375,0.304625,0.304875,0.305125,0.305375,0.305625,0.305875,0.306125,0.306375,0.306625,0.306875,0.307125,0.307375,0.307625,0.307875,0.308125,0.308375,0.308625,0.308875,0.309125,0.309375,0.309625,0.309875,0.310125,0.310375,0.310625,0.310875,0.311125,0.311375,0.311625,0.311875,0.312125,0.312375,0.312625,0.312875,0.313125,0.313375,0.313625,0.313875,0.314125,0.314375,0.314625,0.314875,0.315125,0.315375,0.315625,0.315875,0.316125,0.316375,0.316625,0.316875,0.317125,0.317375,0.317625,0.317875,0.318125,0.318375,0.318625,0.318875,0.319125,0.319375,0.319625,0.319875,0.320125,0.320375,0.320625,0.320875,0.321125,0.321375,0.321625,0.321875,0.322125,0.322375,0.322625,0.322875,0.323125,0.323375,0.323625,0.323875,0.324125,0.324375,0.324625,0.324875,0.325125,0.325375,0.325625,0.325875,0.326125,0.326375,0.326625,0.326875,0.327125,0.327375,0.327625,0.327875,0.328125,0.328375,0.328625,0.328875,0.329125,0.329375,0.329625,0.329875,0.330125,0.330375,0.330625,0.330875,0.331125,0.331375,0.331625,0.331875,0.332125,0.332375,0.332625,0.332875,0.333125,0.333375,0.333625,0.333875,0.334125,0.334375,0.334625,0.334875,0.335125,0.335375,0.335625,0.335875,0.336125,0.336375,0.336625,0.336875,0.337125,0.337375,0.337625,0.337875,0.338125,0.338375,0.338625,0.338875,0.339125,0.339375,0.339625,0.339875,0.340125,0.340375,0.340625,0.340875,0.341125,0.341375,0.341625,0.341875,0.342125,0.342375,0.342625,0.342875,0.343125,0.343375,0.343625,0.343875,0.344125,0.344375,0.344625,0.344875,0.345125,0.345375,0.345625,0.345875,0.346125,0.346375,0.346625,0.346875,0.347125,0.347375,0.347625,0.347875,0.348125,0.348375,0.348625,0.348875,0.349125,0.349375,0.349625,0.349875,0.350125,0.350375,0.350625,0.350875,0.351125,0.351375,0.351625,0.351875,0.352125,0.352375,0.352625,0.352875,0.353125,0.353375,0.353625,0.353875,0.354125,0.354375,0.354625,0.354875,0.355125,0.355375,0.355625,0.355875,0.356125,0.356375,0.356625,0.356875,0.357125,0.357375,0.357625,0.357875,0.358125,0.358375,0.358625,0.358875,0.359125,0.359375,0.359625,0.359875,0.360125,0.360375,0.360625,0.360875,0.361125,0.361375,0.361625,0.361875,0.362125,0.362375,0.362625,0.362875,0.363125,0.363375,0.363625,0.363875,0.364125,0.364375,0.364625,0.364875,0.365125,0.365375,0.365625,0.365875,0.366125,0.366375,0.366625,0.366875,0.367125,0.367375,0.367625,0.367875,0.368125,0.368375,0.368625,0.368875,0.369125,0.369375,0.369625,0.369875,0.370125,0.370375,0.370625,0.370875,0.371125,0.371375,0.371625,0.371875,0.372125,0.372375,0.372625,0.372875,0.373125,0.373375,0.373625,0.373875,0.374125,0.374375,0.374625,0.374875,0.375125,0.375375,0.375625,0.375875,0.376125,0.376375,0.376625,0.376875,0.377125,0.377375,0.377625,0.377875,0.378125,0.378375,0.378625,0.378875,0.379125,0.379375,0.379625,0.379875,0.380125,0.380375,0.380625,0.380875,0.381125,0.381375,0.381625,0.381875,0.382125,0.382375,0.382625,0.382875,0.383125,0.383375,0.383625,0.383875,0.384125,0.384375,0.384625,0.384875,0.385125,0.385375,0.385625,0.385875,0.386125,0.386375,0.386625,0.386875,0.387125,0.387375,0.387625,0.387875,0.388125,0.388375,0.388625,0.388875,0.389125,0.389375,0.389625,0.389875,0.390125,0.390375,0.390625,0.390875,0.391125,0.391375,0.391625,0.391875,0.392125,0.392375,0.392625,0.392875,0.393125,0.393375,0.393625,0.393875,0.394125,0.394375,0.394625,0.394875,0.395125,0.395375,0.395625,0.395875,0.396125,0.396375,0.396625,0.396875,0.397125,0.397375,0.397625,0.397875,0.398125,0.398375,0.398625,0.398875,0.399125,0.399375,0.399625,0.399875,0.400125,0.400375,0.400625,0.400875,0.401125,0.401375,0.401625,0.401875,0.402125,0.402375,0.402625,0.402875,0.403125,0.403375,0.403625,0.403875,0.404125,0.404375,0.404625,0.404875,0.405125,0.405375,0.405625,0.405875,0.406125,0.406375,0.406625,0.406875,0.407125,0.407375,0.407625,0.407875,0.408125,0.408375,0.408625,0.408875,0.409125,0.409375,0.409625,0.409875,0.410125,0.410375,0.410625,0.410875,0.411125,0.411375,0.411625,0.411875,0.412125,0.412375,0.412625,0.412875,0.413125,0.413375,0.413625,0.413875,0.414125,0.414375,0.414625,0.414875,0.415125,0.415375,0.415625,0.415875,0.416125,0.416375,0.416625,0.416875,0.417125,0.417375,0.417625,0.417875,0.418125,0.418375,0.418625,0.418875,0.419125,0.419375,0.419625,0.419875,0.420125,0.420375,0.420625,0.420875,0.421125,0.421375,0.421625,0.421875,0.422125,0.422375,0.422625,0.422875,0.423125,0.423375,0.423625,0.423875,0.424125,0.424375,0.424625,0.424875,0.425125,0.425375,0.425625,0.425875,0.426125,0.426375,0.426625,0.426875,0.427125,0.427375,0.427625,0.427875,0.428125,0.428375,0.428625,0.428875,0.429125,0.429375,0.429625,0.429875,0.430125,0.430375,0.430625,0.430875,0.431125,0.431375,0.431625,0.431875,0.432125,0.432375,0.432625,0.432875,0.433125,0.433375,0.433625,0.433875,0.434125,0.434375,0.434625,0.434875,0.435125,0.435375,0.435625,0.435875,0.436125,0.436375,0.436625,0.436875,0.437125,0.437375,0.437625,0.437875,0.438125,0.438375,0.438625,0.438875,0.439125,0.439375,0.439625,0.439875,0.440125,0.440375,0.440625,0.440875,0.441125,0.441375,0.441625,0.441875,0.442125,0.442375,0.442625,0.442875,0.443125,0.443375,0.443625,0.443875,0.444125,0.444375,0.444625,0.444875,0.445125,0.445375,0.445625,0.445875,0.446125,0.446375,0.446625,0.446875,0.447125,0.447375,0.447625,0.447875,0.448125,0.448375,0.448625,0.448875,0.449125,0.449375,0.449625,0.449875,0.450125,0.450375,0.450625,0.450875,0.451125,0.451375,0.451625,0.451875,0.452125,0.452375,0.452625,0.452875,0.453125,0.453375,0.453625,0.453875,0.454125,0.454375,0.454625,0.454875,0.455125,0.455375,0.455625,0.455875,0.456125,0.456375,0.456625,0.456875,0.457125,0.457375,0.457625,0.457875,0.458125,0.458375,0.458625,0.458875,0.459125,0.459375,0.459625,0.459875,0.460125,0.460375,0.460625,0.460875,0.461125,0.461375,0.461625,0.461875,0.462125,0.462375,0.462625,0.462875,0.463125,0.463375,0.463625,0.463875,0.464125,0.464375,0.464625,0.464875,0.465125,0.465375,0.465625,0.465875,0.466125,0.466375,0.466625,0.466875,0.467125,0.467375,0.467625,0.467875,0.468125,0.468375,0.468625,0.468875,0.469125,0.469375,0.469625,0.469875,0.470125,0.470375,0.470625,0.470875,0.471125,0.471375,0.471625,0.471875,0.472125,0.472375,0.472625,0.472875,0.473125,0.473375,0.473625,0.473875,0.474125,0.474375,0.474625,0.474875,0.475125,0.475375,0.475625,0.475875,0.476125,0.476375,0.476625,0.476875,0.477125,0.477375,0.477625,0.477875,0.478125,0.478375,0.478625,0.478875,0.479125,0.479375,0.479625,0.479875,0.480125,0.480375,0.480625,0.480875,0.481125,0.481375,0.481625,0.481875,0.482125,0.482375,0.482625,0.482875,0.483125,0.483375,0.483625,0.483875,0.484125,0.484375,0.484625,0.484875,0.485125,0.485375,0.485625,0.485875,0.486125,0.486375,0.486625,0.486875,0.487125,0.487375,0.487625,0.487875,0.488125,0.488375,0.488625,0.488875,0.489125,0.489375,0.489625,0.489875,0.490125,0.490375,0.490625,0.490875,0.491125,0.491375,0.491625,0.491875,0.492125,0.492375,0.492625,0.492875,0.493125,0.493375,0.493625,0.493875,0.494125,0.494375,0.494625,0.494875,0.495125,0.495375,0.495625,0.495875,0.496125,0.496375,0.496625,0.496875,0.497125,0.497375,0.497625,0.497875,0.498125,0.498375,0.498625,0.498875,0.499125,0.499375,0.499625,0.499875">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="296" srcpinname="XY" dstnodeid="291" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="297">
+   <BOUNDS type="Node" left="8724" top="5220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="297" srcpinname="Output" dstnodeid="296" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="295" srcpinname="Output" dstnodeid="297" dstpinname="Input">
+   </LINK>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="299">
+   <BOUNDS type="Node" left="10152" top="4620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="4000">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="298">
+   <BOUNDS type="Node" left="10128" top="5220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="299" srcpinname="Output" dstnodeid="298" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="298" srcpinname="Output" dstnodeid="296" dstpinname="Y">
+   </LINK>
+   <NODE systemname="RGB (Color Split)" nodename="RGB (Color Split)" componentmode="Hidden" id="300">
+   <BOUNDS type="Node" left="8688" top="7572" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="290" srcpinname="Color" dstnodeid="300" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Resize (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\modules\Resize (DX11.Texture 2d).v4p" nodename="Resize (DX11.Texture 2d)" componentmode="Hidden" id="301">
+   <BOUNDS type="Node" left="5508" top="8844" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture SizeXY" slicecount="2" values="224,224">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="288" srcpinname="Buffers" dstnodeid="301" dstpinname="Texture In">
+   </LINK>
+   <NODE componentmode="InABox" id="320" nodename="IOBox (String)">
+   <BOUNDS height="0" left="6219" top="10359" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="24795" top="7545" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="300" left="6219" top="10359" type="Box" width="1050">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="/test">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="319" nodename="IOBOX (VALUE ADVANCED)">
+   <BOUNDS height="0" left="8094" top="14064" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="8094" top="14064" type="Box" width="570">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="12001">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="99999">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="318" nodename="IOBOX (VALUE ADVANCED)">
+   <BOUNDS height="0" left="7509" top="13914" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="9195" top="6930" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="375" left="7509" top="13914" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="315" nodename="IOBox (String)">
+   <BOUNDS height="0" left="7734" top="9129" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="4980" top="6225" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="285" left="7734" top="9129" type="Box" width="405">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="314" nodename="IOBox (String)">
+   <BOUNDS height="255" left="8094" top="9084" type="Node" width="1005">
+   </BOUNDS>
+   <BOUNDS height="1188" left="8094" top="9084" type="Box" width="3300">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|The Typetag states, what type of data is sent&cr;&lf;supported typetags:&cr;&lf;s = string&cr;&lf;f = float&cr;&lf;i = integer|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="312" nodename="IOBox (String)">
+   <BOUNDS height="270" left="6219" top="10059" type="Node" width="1035">
+   </BOUNDS>
+   <BOUNDS height="270" left="6219" top="10059" type="Box" width="1035">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|osc address:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="311" nodename="IOBox (String)">
+   <BOUNDS height="270" left="8679" top="14034" type="Node" width="780">
+   </BOUNDS>
+   <BOUNDS height="270" left="8679" top="14034" type="Box" width="780">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|udp port|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="310" nodename="IOBox (String)">
+   <BOUNDS height="255" left="6249" top="13029" type="Node" width="1035">
+   </BOUNDS>
+   <BOUNDS height="285" left="6249" top="13029" type="Box" width="4020">
+   </BOUNDS>
+   <BOUNDS height="160" left="-120" top="915" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|the osc-encoded message represented as string|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" hiddenwhenlocked="0" id="309" nodename="IOBox (String)">
+   <PIN pinname="Input String" visible="1" slicecount="1" encoded="1" values="I2J1bmRsZQAAAAAAAAAAAQAAACQvdGlja3RhY2sAAAAscwAAMjAxMy4wMS4wNy0wMi40MC4zMwA=">
+   </PIN>
+   <BOUNDS height="0" left="6144" top="13344" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="13800" top="17130" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="330" left="6144" top="13344" type="Box" width="6300">
+   </BOUNDS>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="308" nodename="IOBOX (VALUE ADVANCED)">
+   <BOUNDS height="0" left="7899" top="10584" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="7650" top="4020" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="435" left="7899" top="10584" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="307">
+   <BOUNDS type="Node" left="8379" top="10404" width="5400" height="480">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8379" top="10404" width="1695" height="1365">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="215" height="160">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|check to send as bundle (recommended)&cr;&lf;only use no bundles if the receiving application does not understand them|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="305" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
+   <BOUNDS height="0" left="7404" top="14514" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Do Send" visible="1">
+   </PIN>
+   <PIN pinname="Remote Port" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Remote Host" slicecount="1" visible="1" values="localhost">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="305" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="319" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="305" dstpinname="Do Send" linkstyle="PolyLine" srcnodeid="318" srcpinname="Y Output Value">
+   </LINK>
+   <NODE id="304" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
+   <BOUNDS height="0" left="7404" top="11889" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Arguments" visible="1">
+   </PIN>
+   <PIN pinname="Type Tags" visible="1">
+   </PIN>
+   <PIN pinname="Address" visible="1">
+   </PIN>
+   <PIN pinname="OSCMessage" visible="1">
+   </PIN>
+   <PIN pinname="Spread as Bundle" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="304" dstpinname="Address" linkstyle="PolyLine" srcnodeid="320" srcpinname="Output String">
+   </LINK>
+   <LINK dstnodeid="304" dstpinname="Type Tags" srcnodeid="315" srcpinname="Output String">
+   </LINK>
+   <LINK srcnodeid="308" srcpinname="Y Output Value" dstnodeid="304" dstpinname="Spread as Bundle">
+   </LINK>
+   <LINK srcnodeid="304" srcpinname="OSCMessage" dstnodeid="305" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="303">
+   <BOUNDS type="Node" left="6144" top="12534" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Encoding" slicecount="1" values="us-ascii">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="304" srcpinname="OSCMessage" dstnodeid="303" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="303" srcpinname="Output" dstnodeid="309" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="AsRaw (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AsRaw (DX11.Texture 2d)" componentmode="Hidden" id="321">
+   <BOUNDS type="Node" left="5520" top="9216" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5520" top="9216" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="301" srcpinname="Texture Out" dstnodeid="321" dstpinname="Texture In">
+   </LINK>
+   <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="323">
+   <BOUNDS type="Node" left="5640" top="9756" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="321" srcpinname="Output" dstnodeid="323" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="323" srcpinname="Output" dstnodeid="304" dstpinname="Arguments">
+   </LINK>
+   <NODE systemname="Change (Raw)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Change (Raw)" componentmode="Hidden" id="326">
+   <BOUNDS type="Node" left="4068" top="10692" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4068" top="10692" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="321" srcpinname="Output" dstnodeid="326" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="326" srcpinname="OnChange" dstnodeid="318" dstpinname="Y Input Value">
+   </LINK>
+   </PATCH>
