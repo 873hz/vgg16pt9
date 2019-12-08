@@ -170,7 +170,7 @@
    </NODE>
    <LINK srcnodeid="288" srcpinname="Buffers" dstnodeid="301" dstpinname="Texture In">
    </LINK>
-   <NODE systemname="oscGET" filename="oscGET.v4p" componentmode="InAWindow" id="377" nodename="oscGET.v4p">
+   <NODE systemname="oscGET" filename="oscGET.v4p" componentmode="Hidden" id="377" nodename="oscGET.v4p">
    <BOUNDS type="Node" left="4332" top="540" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4332" top="540" width="4800" height="3600">
@@ -569,7 +569,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3612" top="2016" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0002">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.002">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -861,7 +861,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8508" top="1812" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.35">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.002">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -927,7 +927,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4932" top="2052" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0002">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.002">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -989,5 +989,7 @@
    <PACK Name="vvvv-ZeroMQ" Version="0.5.7">
    </PACK>
    <LINK srcnodeid="377" srcpinname="trig0" dstnodeid="428" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="547" srcpinname="Output" dstnodeid="4" dstpinname="Layer 3">
    </LINK>
    </PATCH>
